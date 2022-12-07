@@ -11,16 +11,14 @@
 
 #define ITEM_H
 
-typedef int Chave;
-
 struct item {
-    int ind;
-    Chave chave;
+  int idx;
+  int dist;
 };
 typedef struct item Item;
 
-Item ITEM(int ind, int chave);
+Item ITEM(int idx, int dist);
 
-int ITEMcompara(Item item1, Item item2);
+int ITEMcompare(Item item1, Item item2);
 
 #endif /* ITEM_H */

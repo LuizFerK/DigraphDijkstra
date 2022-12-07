@@ -9,10 +9,10 @@
 
 #include "item.h"
 
-Item ITEM(int ind, int chave) {
-    return ((Item) {.ind = ind, .chave = chave});
+Item ITEM(int idx, int dist) {
+  return ((Item) {.idx = idx, .dist = dist});
 }
 
-int ITEMcompara(Item item1, Item item2) {
-    return (item1.chave - item2.chave);
+int ITEMcompare(Item item1, Item item2) {
+  return (item1.dist - item2.dist);
 }
